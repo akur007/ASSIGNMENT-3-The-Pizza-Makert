@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Order Form</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <h1>Welcome to Anoop's Pizza Place</h1>
+
+    <!-- Student Information -->
+    <p id="studentInfo">Student ID: 200378937 | Name: Anoop</p>
+
+    <!-- Images for Different Types of Pizza -->
+    <div class="pizza-images">
+        <!-- Pepperoni Pizza -->
+        <div class="pizza-item">
+            <img src="IMG/Pepperoni.png" alt="Pepperoni Pizza">
+            <span>Pepperoni Pizza</span>
+        </div>
+        <!-- Margherita Pizza -->
+        <div class="pizza-item">
+            <img src="IMG/pizzamargherita1.jpg" alt="Margherita Pizza">
+            <span>Margherita Pizza</span>
+        </div>
+        <!-- Veggie Pizza -->
+        <div class="pizza-item">
+            <img src="IMG/air-fryer-pizza-1.jpg" alt="Vegetarian Pizza">
+            <span>Veggie Pizza</span>
+        </div>
+        <!-- Hawaiian Pizza -->
+        <div class="pizza-item">
+            <img src="IMG/Hawaiian.jpg" alt="Hawaiian Pizza">
+            <span>Hawaiian Pizza</span>
+        </div>
+        <!-- Meat Lovers Pizza -->
+        <div class="pizza-item">
+            <img src="IMG/meat-lovers.jpg" alt="Meat Lovers Pizza">
+            <span>Meat Lovers Pizza</span>
+        </div>
+        <!-- Cheese Pizza -->
+        <div class="pizza-item">
+            <img src="IMG/classic-cheese-pizza-.jpg" alt="Cheese Pizza">
+            <span>Cheese Pizza</span>
+        </div>
+        <!-- Supreme Pizza -->
+        <div class="pizza-item">
+            <img src="IMG/supreme.jpg" alt="Supreme Pizza">
+            <span>Supreme Pizza</span>
+        </div>
+    </div>
+
+    <!-- Pizza Order Form -->
+    <form id="pizzaForm">
+        <!-- Pizza Size Options -->
+        <label for="pizzaSize">Pizza Size:</label>
+        <select id="pizzaSize" name="pizzaSize">
+            <option value="Small">Small</option>
+            <option value="Medium">Medium</option>
+            <option value="Large">Large</option>
+        </select><br>
+
+        <!-- Crust Type Options -->
+        <label for="crustType">Crust Type:</label>
+        <select id="crustType" name="crustType">
+            <option value="Thin Crust">Thin Crust</option>
+            <option value="Thick Crust">Thick Crust</option>
+            <option value="Stuffed Crust">Stuffed Crust</option>
+        </select><br>
+
+        <!-- Toppings Options -->
+        <label for="toppings">Toppings:</label>
+        <input type="text" id="toppings" name="toppings"><br>
+
+        <button type="submit">Place Order</button>
+    </form>
+
+    <!-- Display Pizza Details -->
+    <div id="pizzaOutput"></div>
+
+    <!-- JavaScript -->
+    <script src="js/script.js" defer></script>
+</body>
+</html>
